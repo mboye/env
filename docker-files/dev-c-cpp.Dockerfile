@@ -6,7 +6,7 @@ RUN \
     apt-get update && \
     apt-get -y upgrade && \
     apt-get install -y software-properties-common && \
-    apt-get install -y curl git htop man unzip vim wget sudo iputils-ping
+    apt-get install -y tmux curl git htop man unzip vim wget sudo iputils-ping
 
 RUN \
     apt-get install -y build-essential \
