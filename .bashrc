@@ -128,3 +128,13 @@ gb ()
 . ~/.scripts/git-prompt.sh
 . ~/.scripts/git-completion.bash
 export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+
+# Fix SSH agent forwarding when using tmux
+AUTH_SOCK_PATH="$HOME/.ssh_auth_sock"
+if [ "$SSH_AUTH_SOCK" != "$AUTH_SOCK_PATH" ]
+then
+    rm -f "$AUTH_SOCK_PATH"
+    ln -s "$SSH_AUTH_SOCK" "$AUTH_SOCK_PATH"
+    export SSH_AUTH_SOCK="$AUTH_SOCK_PATH"
+fi
