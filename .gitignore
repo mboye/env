@@ -12,3 +12,4 @@
 .ssh/config
 .ssh/known_hosts
 .ssh_auth_sock
+workspace
