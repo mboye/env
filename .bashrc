@@ -117,3 +117,14 @@ if ! shopt -oq posix; then
 fi
 
 alias gs='git status'
+
+gb ()
+{
+    git for-each-ref --sort=-committerdate refs/heads/ \
+        --format='%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' |
+            column -ts'|'
+}
+
+. ~/.scripts/git-prompt.sh
+. ~/.scripts/git-completion.bash
+export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '

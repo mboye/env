@@ -5,3 +5,7 @@
 .sudo_as_admin_successful
 .viminfo
 .vim
+*.*.swp
+.scripts
+.lesshst
+.wget-hsts
