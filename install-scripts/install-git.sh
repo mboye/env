@@ -1,9 +1,9 @@
 #!/bin/bash
 set -eux
 
-sudo add-apt-repository -y ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install -y git
+add-apt-repository -y ppa:git-core/ppa
+apt-get update
+apt-get install -y git
 
 mkdir -p ~/.scripts
 wget -N -O ~/.scripts/git-prompt.sh \

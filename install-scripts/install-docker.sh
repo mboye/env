@@ -1,14 +1,14 @@
 #!/bin/bash
 set -eux
 
-sudo apt-get install apt-transport-https \
+apt-get install apt-transport-https \
                      ca-certificates
 
-curl -fsSL https://yum.dockerproject.org/gpg | sudo apt-key add -
-sudo add-apt-repository \
+curl -fsSL https://yum.dockerproject.org/gpg | apt-key add -
+add-apt-repository \
     "deb https://apt.dockerproject.org/repo/ \
     ubuntu-$(lsb_release -cs) \
     main"
 
-sudo apt-get update
-sudo apt-get -y install docker-engine
+apt-get update
+apt-get -y install docker-engine
