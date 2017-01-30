@@ -9,3 +9,6 @@
 .scripts
 .lesshst
 .wget-hsts
+.ssh/config
+.ssh/known_hosts
+.ssh_auth_sock
