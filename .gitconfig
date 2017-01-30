@@ -3,3 +3,15 @@
 	name = Magnus Boye
 [core]
 	editor = vim
+[pull]
+	rebase = true
+[rerere]
+        enabled = true
+[log]
+        decorate = true
+[alias]
+    tree = log --decorate --graph --oneline
+    lone = log --oneline --no-decorate
+    mod = log -1 --name-status
+    stack = cherry -v
+    ds = diff --staged
