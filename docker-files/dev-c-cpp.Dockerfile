@@ -13,6 +13,7 @@ RUN \
 RUN \
     apt-get install -y build-essential \
                        clang \
+                       gdb \
                        python
 
 RUN \
@@ -36,10 +37,7 @@ RUN \
   rm -rf ${HOME}/install-scripts && \
   rm -f /etc/ssh/ssh_host_*
 
-ADD .bashrc ${HOME}
-add .bash_profile ${HOME}
-ADD .vimrc ${HOME}
-ADD .ssh/authorized_keys ${HOME}/.ssh/authorized_keys
+ADD home ${HOME}
 ADD docker-files/sshd-entrypoint.sh /entrypoint.sh
 
 RUN chown -R magnus:magnus ${HOME}

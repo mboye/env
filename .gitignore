@@ -1,15 +1,1 @@
-.cache
-.bash_history
-.bash_logout
-.profile
-.sudo_as_admin_successful
-.viminfo
-.vim
-*.*.swp
-.scripts
-.lesshst
-.wget-hsts
-.ssh/config
-.ssh/known_hosts
-.ssh_auth_sock
-workspace
+home/.gitignore
