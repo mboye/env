@@ -1,5 +1,7 @@
 FROM ubuntu:16.10
 ENV HOME /home/magnus
+ENV LANG en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
 
 RUN \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
@@ -20,6 +22,7 @@ RUN \
 RUN useradd -m -d ${HOME} --shell /bin/bash magnus
 RUN adduser magnus sudo
 RUN echo 'magnus:13ce28a75adf5321ef930660d55c13ce8f6eb788' | chpasswd
+RUN locale-gen en_US.UTF-8
 
 WORKDIR /home/magnus
 ADD install-scripts ${HOME}/install-scripts
