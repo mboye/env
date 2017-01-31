@@ -1,8 +1,8 @@
 #!/bin/bash
 set -eux
 
-apt-get install apt-transport-https \
-                     ca-certificates
+apt-get install -y apt-transport-https \
+                   ca-certificates
 
 curl -fsSL https://yum.dockerproject.org/gpg | apt-key add -
 add-apt-repository \
