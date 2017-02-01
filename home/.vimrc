@@ -43,4 +43,5 @@ let g:syntastic_python_checker="pep8"
 map <F6> :cnext <CR>
 map <F12> :cwindow <CR>
 map <F5> :make clean unit-test-run <CR>
-map <f1> :wa<cr>:make <Up><cr>
+map <F1> :wa<CR>:make <Up><CR>
+map <F2> :wa<CR>:! <Up><CR>
