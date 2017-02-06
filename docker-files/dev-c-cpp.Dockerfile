@@ -11,12 +11,15 @@ RUN \
     apt-get install -y tmux curl git htop man unzip vim wget sudo iputils-ping
 
 RUN \
+    apt-get update && \
     apt-get install -y build-essential \
                        clang \
                        gdb \
+                       lcov \
                        python
 
 RUN \
+    apt-get update && \
     apt-get install -y openssh-server && \
     mkdir -p /var/run/sshd
 
