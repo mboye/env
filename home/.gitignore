@@ -13,3 +13,6 @@
 .ssh/known_hosts
 .ssh_auth_sock
 workspace
+cscope.files
+cscope.out
+tags

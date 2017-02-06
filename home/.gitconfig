@@ -2,16 +2,18 @@
 	email = magnusboye@gmail.com
 	name = Magnus Boye
 [core]
-	editor = vim
+    editor = vim
+    excludesfile = ~/.gitignore
 [pull]
-	rebase = true
+    rebase = true
 [rerere]
-        enabled = true
+    enabled = true
 [log]
-        decorate = true
+    decorate = true
 [alias]
     tree = log --decorate --graph --oneline
     lone = log --oneline --no-decorate
     mod = log -1 --name-status
     stack = cherry -v
     ds = diff --staged
+    ca = commit -a --amend --no-edit
