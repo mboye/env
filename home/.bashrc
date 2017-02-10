@@ -141,3 +141,6 @@ then
         export SSH_AUTH_SOCK="$AUTH_SOCK_PATH"
     fi
 fi
+
+# Append to history in all sessions
+export PROMPT_COMMAND='history -a'
