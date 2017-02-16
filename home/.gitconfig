@@ -17,3 +17,5 @@
     stack = cherry -v
     ds = diff --staged
     ca = commit -a --amend --no-edit
+[diff]
+    wsErrorHighlight = all
