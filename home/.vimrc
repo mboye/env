@@ -6,6 +6,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+set tabpagemax=100
 set tabstop=4
 set shiftwidth=4
 set expandtab
