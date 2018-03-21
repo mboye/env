@@ -13,6 +13,7 @@ pushd ~/.vim/bundle
 
 git clone git://github.com/altercation/vim-colors-solarized.git
 git clone git://github.com/airblade/vim-gitgutter.git
+git clone https://github.com/fatih/vim-go.git
 
 apt-get install -y cmake \
                    python-dev \

@@ -144,3 +144,7 @@ fi
 
 # Append to history in all sessions
 export PROMPT_COMMAND='history -a'
+
+export PATH=/usr/local/go/bin:$PATH
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
